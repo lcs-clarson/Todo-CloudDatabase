@@ -5,8 +5,6 @@
 //  Created by Charlie Larson on 2024-04-15.
 //
 
-
-
 import Foundation
 
 @Observable
@@ -19,7 +17,9 @@ class TodoListViewModel {
     // MARK: Initializer(s)
     init(todos: [TodoItem] = []) {
         self.todos = todos
-        
+        Task {
+            try await getTodos()
+        }
     }
     
     // MARK: Functions
@@ -98,6 +98,28 @@ class TodoListViewModel {
                 debugPrint(error)
             }
             
+            
+        }
+        
+    }
+    
+    func update(todo updatedTodo: TodoItem) {
+        
+        // Create a unit of asynchronous work to add the to-do item
+        Task {
+            
+            do {
+                
+                // Run the update command
+                try await supabase
+                    .from("todos")
+                    .update(updatedTodo)
+                    .eq("id", value: updatedTodo.id!)   // Only update the row whose id
+                    .execute()                          // matches that of the to-do being deleted
+                
+            } catch {
+                debugPrint(error)
+            }
             
         }
         
