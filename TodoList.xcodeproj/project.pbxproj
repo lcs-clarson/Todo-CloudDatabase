@@ -23,6 +23,7 @@
 		CB1B46532BFF823400CB295A /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B46522BFF823300CB295A /* Supabase.swift */; };
 		CB1B46572C00F47D00CB295A /* AppEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B46562C00F47D00CB295A /* AppEntryView.swift */; };
 		CB1B46592C00F4B500CB295A /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1B46582C00F4B500CB295A /* AuthView.swift */; };
+		CBFC49DC2C0505E2001FF1BC /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFC49DB2C0505E2001FF1BC /* NewItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		CB1B46522BFF823300CB295A /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		CB1B46562C00F47D00CB295A /* AppEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryView.swift; sourceTree = "<group>"; };
 		CB1B46582C00F4B500CB295A /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		CBFC49DB2C0505E2001FF1BC /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				814A08FB2BC41BC500921E4F /* ItemView.swift */,
 				CB1B46562C00F47D00CB295A /* AppEntryView.swift */,
 				CB1B46582C00F4B500CB295A /* AuthView.swift */,
+				CBFC49DB2C0505E2001FF1BC /* NewItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBFC49DC2C0505E2001FF1BC /* NewItemView.swift in Sources */,
 				815D9D7F2BC413800050957E /* LandingView.swift in Sources */,
 				CB1B46532BFF823400CB295A /* Supabase.swift in Sources */,
 				814A08FC2BC41BC500921E4F /* ItemView.swift in Sources */,
